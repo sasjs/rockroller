@@ -16,7 +16,7 @@
       "sasjsbuild/viyadeploy.sas"
     ],
     "tgtDeployVars": {
-      "contextName": "sharedcompute",
+      "contextName": "Import 9 service compute context",
       "access_token": "eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vbG9jYWxob3N0L1NBU0xvZ29uL3Rva2VuX2tleXMiLCJraWQiOiJsZWdhY3ktdG9rZW4ta2V5IiwidHlwIjoiSldUIn0.eyJqdGkiOiI0NDJjNDRlODFmOTM0ZjVkODNkMzljM2M4MzNjZDZiMCIsImV4dF9pZCI6ImNuPUFsbGFuIEJvd2Usb3U9QUFEREMgVXNlcnMsZGM9YW5hbHl0aXVtLGRjPWNvLGRjPXVrIiwicmVtb3RlX2lwIjoiODcuMTE2LjE3OC4yNDkiLCJzdWIiOiIxMzZmYjQyOC1hMjM4LTQ3ZGItYWU2Yy1hN2ZkY2NkMzk0ZmQiLCJzY29wZSI6WyJEYXRhQnVpbGRlcnMiLCJTQVNBZG1pbmlzdHJhdG9ycyIsInNlYy1zYXN2aXlhLXByZC1leHQtc2FzcGxhdGZvcm0tZGV2ZWxvcGVycyIsIm9wZW5pZCIsIkFsbCBVc2VycyIsIkFuYWx5dGl1bSBHcm91cCIsInNlYy1zYXN2aXlhLXByZC1pbnQtc2FzcGxhdGZvcm0tYWxsc2FzdXNlcnMiXSwiY2xpZW50X2lkIjoiY2xpZW50M0ZEM0UyRTRDMTI3QzVDQSIsImNpZCI6ImNsaWVudDNGRDNFMkU0QzEyN0M1Q0EiLCJhenAiOiJjbGllbnQzRkQzRTJFNEMxMjdDNUNBIiwiZ3JhbnRfdHlwZSI6ImF1dGhvcml6YXRpb25fY29kZSIsInVzZXJfaWQiOiIxMzZmYjQyOC1hMjM4LTQ3ZGItYWU2Yy1hN2ZkY2NkMzk0ZmQiLCJvcmlnaW4iOiJsZGFwIiwidXNlcl9uYW1lIjoiYWxsYm93IiwiZW1haWwiOiJhbGxhbi5ib3dlQGFuYWx5dGl1bS5jby51ayIsImF1dGhfdGltZSI6MTU5MDYwNjQxOSwicmV2X3NpZyI6ImE1NDc3NTc2IiwiaWF0IjoxNTkwNjA2NDE5LCJleHAiOjE1OTA2NDI0MTksImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3QvU0FTTG9nb24vb2F1dGgvdG9rZW4iLCJ6aWQiOiJ1YWEiLCJhdWQiOlsiY2xpZW50M0ZEM0UyRTRDMTI3QzVDQSIsIm9wZW5pZCJdfQ.IVZDwiYyY-VaFevfED4XLInUkdOBrrIuLH0Hmg5_RptEuVuCl0jNdhfKyoJg09gxn9mxAlOVpe-P5_NjQRwEsYmhlfgs79oqp0wawigVAtsz7xqXy9-y1Ns4vsqGx_lyE7LhgpoJL8t4YenicKnzW493tVAig8hoRh7VX2c00OZ1ZmPuG7Gws9Wck5OmKJAo_RX7HcJe9muJRSmMgHdh9xtniicmkmh1IBRL33NyjQGxYYIuOVXEL9O9g3AhStVIIGULZBIk_zocLieiWxCnrYoUXkiDsNDdyiqWQa_3GQ3BTjuHGYZq2OSk0oxMOhzjS4TK1lc4VYTi8h7L-zfv-Q"
     },
     "serverUrl": "http://sas.analytium.co.uk",
@@ -35,7 +35,7 @@
       "serverName": "SASApp",
       "repositoryName": "Foundation"
     },
-    "serverUrl": "http://sas.analytium.co.uk:8085",
+    "serverUrl": "SAS9APISERVER:PORT",
     "streamWeb": true,
     "streamWebFolder": "webv",
     "webSourcePath": "src"

@@ -44,6 +44,7 @@ In addition, the `access_token` and the `contextName` (name of the compute serve
       "access_token": "eyJhbGciOiJSUzI1NiIstruncated"
     },
 ```
+The contextName can be retrieved from the YOURSERVER/compute/contexts api.
 
 Finally, enter the `serverUrl`:
 ```
