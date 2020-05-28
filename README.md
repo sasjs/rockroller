@@ -36,12 +36,11 @@ Paste these in `tgtBuildVars` as follows (these are used by SAS to create the se
     },
 ```
 
-In addition, the `access_token` and the `contextName` (name of the compute server) should be entered below:
+In addition, the `contextName` (name of the compute server) should be entered below:
 
 ```
     "tgtDeployVars": {
-      "contextName": "sharedcompute",
-      "access_token": "eyJhbGciOiJSUzI1NiIstruncated"
+      "contextName": "sharedcompute"
     },
 ```
 The contextName can be retrieved from the YOURSERVER/compute/contexts api.
