@@ -7,7 +7,7 @@ The purpose is to demonstrate the ease with which HTML5 apps can be compiled, bu
 ## Prerequisites
 
 * NPM and Node (12+)
-* SASJS-CLI (`npm install -g sasjs-cli`)
+* SASJS-CLI (`npm install -g @sasjs/cli`)
 
 ## Build Instructions
 
@@ -15,7 +15,7 @@ First, clone the directory, then open `sasjs/sasjsconfig.json`.  Choose your tar
 
 * `appLoc` -> the metadata or viya folder root location in which to build the app
 
-At this point you can already run `sasjs cb sas9` or `sasjs cb viya` from the root of the project to create a build script you can run in SAS.
+At this point you can already run `sasjs cb sas9` or `sasjs cb viya` from the root of the project to compile and build a program you can run in SAS.
 
 ## Build & Deploy Instructions
 
@@ -47,7 +47,7 @@ The contextName can be retrieved from the YOURSERVER/compute/contexts api.
 
 Finally, enter the `serverUrl`:
 ```
-    "serverUrl": "http://sas.analytium.co.uk",
+    "serverUrl": "https://sas.analytium.co.uk",
 ```
 
 You can now run `sasjs cbd viya` and the log will be found under `sasjsbuild`.
@@ -55,7 +55,6 @@ You can now run `sasjs cbd viya` and the log will be found under `sasjsbuild`.
 ### SAS9
 
 For SAS9 we link into the [sas9api](https://sas9api.io) by Analytium.  Contact them for a free demo copy.  Config as follows:
-
 
 
 ```
