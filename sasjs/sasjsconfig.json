@@ -1,43 +1,41 @@
 {
- "useMacroCore": true,
- "targets": [
-  {
-    "name": "viya",
-    "serverType": "SASVIYA",
-    "appLoc": "/Public/apps/sasjs/rockroller",
-    "tgtBuildVars": {
-      "client": "client3FEDAD22A2FB5845",
-      "secret": "secret3FEA4DA3D8B49B48",
-      "access_token": "eyJhbGciOiJSUzIexample",
-      "refresh_token": "eyJhbGciOiJSUzIexample"
+  "$schema": "https://raw.githubusercontent.com/sasjs/utils/main/src/types/sasjsconfig-schema.json",
+  "targets": [
+    {
+      "name": "viya",
+      "serverType": "SASVIYA",
+      "appLoc": "/Public/apps/sasjs/rockroller",
+      "serverUrl": "http://sas.analytium.co.uk",
+      "buildConfig": {
+        "buildOutputFileName": "viyadeploy.sas"
+      },
+      "deployConfig": {
+        "deployServicePack": true
+      },
+      "streamConfig": {
+        "streamWeb": true,
+        "streamWebFolder": "webv",
+        "webSourcePath": "src"
+      }
     },
-    "buildOutputFileName": "viyadeploy.sas",
-    "tgtDeployScripts":[
-      "sasjsbuild/viyadeploy.sas"
-    ],
-    "tgtDeployVars": {
-      "contextName": "Import 9 service compute context"
-     },
-    "serverUrl": "http://sas.analytium.co.uk",
-    "streamWeb": true,
-    "streamWebFolder": "webv",
-    "webSourcePath": "src"
-  },  {
-    "name": "sas9",
-    "serverType": "SAS9",
-    "appLoc": "/30.Projects/3001.Internal/300114.sasjs/rockroller",
-    "buildOutputFileName": "sas9deploy.sas",
-    "tgtDeployScripts":[
-      "sasjsbuild/sas9deploy.sas"
-    ],
-    "tgtDeployVars": {
-      "serverName": "SASApp",
-      "repositoryName": "Foundation"
-    },
-    "serverUrl": "SAS9APISERVER:PORT",
-    "streamWeb": true,
-    "streamWebFolder": "webv",
-    "webSourcePath": "src"
-   }
+    {
+      "name": "sas9",
+      "serverType": "SAS9",
+      "appLoc": "/User Folders/&sysuserid/My Folder",
+      "serverUrl": "https://sas.analytium.co.uk:8080",
+      "buildConfig": {
+        "buildOutputFileName": "sas9deploy.sas"
+      },
+      "deployConfig": {
+        "deployScripts": [
+          "sasjsbuild/sas9deploy.sas"
+        ]
+      },
+      "streamConfig": {
+        "streamWeb": true,
+        "streamWebFolder": "webv",
+        "webSourcePath": "src"
+      }
+    }
   ]
 }

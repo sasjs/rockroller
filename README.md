@@ -2,7 +2,7 @@
 
 A pure HTML5 game ([source](https://github.com/juwalbose/ThreeJSEndlessRunner3D)) that can be streamed from SAS 9 or Viya using [SASjs](https://sasjs.io).
 
-The purpose is to demonstrate the ease with which HTML5 apps can be compiled, built and deployed using the Viya REST APIs and/or the [SAS9API](https://sas9api.io).
+The purpose is to demonstrate the ease with which HTML5 apps can be compiled, built and deployed using SASjs.
 
 ## Prerequisites
 
@@ -15,7 +15,7 @@ First, clone the directory, then open `sasjs/sasjsconfig.json`.  Choose your tar
 
 * `appLoc` -> the metadata or viya folder root location in which to build the app
 
-At this point you can already run `sasjs cb sas9` or `sasjs cb viya` from the root of the project to compile and build a program you can run in SAS.
+At this point you can already run `sasjs cb -t sas9` or `sasjs cb -t viya` from the root of the project to compile and build a program you can run in SAS to generate the app.
 
 ## Build & Deploy Instructions
 
@@ -23,46 +23,14 @@ To auto build / deploy there are some additional steps.
 
 ### Viya
 
-First obtain a client, secret and access token (perhaps by using the [Viya Token Generator](https://youtu.be/mHP96rmyRoo)).  
+First obtain a client and secret (perhaps by using the [Viya Token Generator](https://youtu.be/mHP96rmyRoo)).
 
-Paste these in `tgtBuildVars` as follows (these are used by SAS to create the services)
+Then run `sasjs add cred -t viya` to authenticate and update the target attributes.
 
-```
-    "tgtBuildVars": {
-      "client": "client3FD3E2E4C127C5CA",
-      "secret": "secret3FC9A521DC334A44",
-      "access_token": "eyJhbGciOiJSUzI1NiIstruncated",
-      "refresh_token": "eyJhbGciOiJSUztruncated"
-    },
-```
-
-In addition, the `contextName` (name of the compute server) should be entered below:
-
-```
-    "tgtDeployVars": {
-      "contextName": "sharedcompute"
-    },
-```
-The contextName can be retrieved from the YOURSERVER/compute/contexts api.
-
-Finally, enter the `serverUrl`:
-```
-    "serverUrl": "https://sas.analytium.co.uk",
-```
-
-You can now run `sasjs cbd viya` and the log will be found under `sasjsbuild`.
+You can now run `sasjs cbd -t viya` and the log will be found under `sasjsbuild`.
 
 ### SAS9
 
-For SAS9 we link into the [sas9api](https://sas9api.io) by Analytium.  Contact them for a free demo copy.  Config as follows:
-
-
-```
-    "tgtDeployVars": {
-      "serverName": "SASApp",
-      "repositoryName": "Foundation"
-    },
-    "serverUrl": "YOURSERVER:PORT",
-```
+For SAS9 just run `sasjs cb -t sas9` and run the `sasjsbuild/sas9deploy.sas` program in EG or SAS Studio.  A link to open the app will be shown in the bottom of the log.
 
 Any issues, do raise an issue!

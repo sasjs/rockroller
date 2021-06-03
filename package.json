@@ -1,24 +1,22 @@
 {
-  "name": "viyatoken",
+  "name": "rock-roller",
   "version": "1.0.0",
-  "description": "A SASjs App for generating the Viya Client and Token",
+  "description": "A SASjs App with embedded Rock Roller game",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@gitlab.com/macropeople/viyatoken.git"
-  },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "sas",
+    "sasjs"
+  ],
+  "author": "Allan Bowe",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/macropeople/viyatoken/issues"
+    "url": "https://gitlab.com/macropeople/rockroller/issues"
   },
-  "homepage": "https://gitlab.com/macropeople/viyatoken#readme",
+  "homepage": "https://gitlab.com/macropeople/rockroller#readme",
   "dependencies": {
-    "macrocore": "^5.17.1",
-    "sasjs": "^2.3.0"
+    "@sasjs/core": "^2.34.1"
   }
 }
