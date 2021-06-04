@@ -13,9 +13,9 @@
   "author": "Allan Bowe",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/macropeople/rockroller/issues"
+    "url": "https://gitlab.com/sasjs/rockroller/issues"
   },
-  "homepage": "https://gitlab.com/macropeople/rockroller#readme",
+  "homepage": "https://gitlab.com/sasjs/rockroller#readme",
   "dependencies": {
     "@sasjs/core": "^2.34.1"
   }
