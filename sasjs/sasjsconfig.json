@@ -1,11 +1,12 @@
 {
   "$schema": "https://raw.githubusercontent.com/sasjs/utils/main/src/types/sasjsconfig-schema.json",
+  "defaultTarget": "viya",
   "targets": [
     {
       "name": "viya",
       "serverType": "SASVIYA",
-      "appLoc": "/Public/apps/sasjs/rockroller",
-      "serverUrl": "http://sas.analytium.co.uk",
+      "appLoc": "/Public/app/sasjs/rockroller",
+      "serverUrl": "https://sas.analytium.co.uk",
       "buildConfig": {
         "buildOutputFileName": "viyadeploy.sas"
       },
@@ -27,9 +28,7 @@
         "buildOutputFileName": "sas9deploy.sas"
       },
       "deployConfig": {
-        "deployScripts": [
-          "sasjsbuild/sas9deploy.sas"
-        ]
+        "deployServicePack": true
       },
       "streamConfig": {
         "streamWeb": true,

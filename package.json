@@ -1,5 +1,6 @@
 {
   "name": "rock-roller",
+  "repository": "https://github.com/sasjs/rockroller",
   "version": "1.0.0",
   "description": "A SASjs App with embedded Rock Roller game",
   "main": "index.js",
@@ -17,6 +18,6 @@
   },
   "homepage": "https://gitlab.com/sasjs/rockroller#readme",
   "dependencies": {
-    "@sasjs/core": "^2.34.1"
+    "@sasjs/core": "^2.35.0"
   }
 }

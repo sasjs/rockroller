@@ -6,7 +6,7 @@ The purpose is to demonstrate the ease with which HTML5 apps can be compiled, bu
 
 ## Prerequisites
 
-* NPM and Node (12+)
+* NPM (v7)
 * SASJS-CLI (`npm install -g @sasjs/cli`)
 
 ## Build Instructions
@@ -14,10 +14,13 @@ The purpose is to demonstrate the ease with which HTML5 apps can be compiled, bu
 First, clone the directory, then open `sasjs/sasjsconfig.json`.  Choose your target (sas9 or Viya).  Within this target, modify the following items:
 
 * `appLoc` -> the metadata or viya folder root location in which to build the app
+* `serverUrl` -> the URL of the Viya server.  Only needed for the Autodeploy option (below)
 
-At this point you can already run `sasjs cb -t sas9` or `sasjs cb -t viya` from the root of the project to compile and build a program you can run in SAS to generate the app.
+# Manual Deploy (Streaming App)
 
-## Build & Deploy Instructions
+Simply run `sasjs cb -t sas9` or `sasjs cb -t viya` from the root of the project to compile and build a SAS program (`sasjsbuild/sas9deploy.sas` or `sasjsbuild/viyadeploy.sas`) that you can run to generate the app.  The link to the app will be at the bottom of the log.
+
+## Auto Deploy (Streaming App)
 
 To auto build / deploy there are some additional steps.
 
@@ -27,10 +30,8 @@ First obtain a client and secret (perhaps by using the [Viya Token Generator](ht
 
 Then run `sasjs add cred -t viya` to authenticate and update the target attributes.
 
-You can now run `sasjs cbd -t viya` and the log will be found under `sasjsbuild`.
+You can now run `sasjs cbd -t viya` and a link to the app will be shown in the console.
 
 ### SAS9
 
-For SAS9 just run `sasjs cb -t sas9` and run the `sasjsbuild/sas9deploy.sas` program in EG or SAS Studio.  A link to open the app will be shown in the bottom of the log.
-
-Any issues, do raise an issue!
+For SAS9 you need to add `SAS_USERNAME` and `SAS_PASSWORD` in the `.env` file in the root of your project.  You can now run `sasjs cbd -t sas9` and the log will be found under `sasjsbuild`.
