@@ -1,8 +1,10 @@
-# RockRunner
+# Rock Roller
 
-A pure HTML5 game ([source](https://github.com/juwalbose/ThreeJSEndlessRunner3D)) that can be streamed on SAS Viya, EBI, and SASjs Server.
+A pure HTML5 game ([source](https://github.com/juwalbose/ThreeJSEndlessRunner3D)) that can be streamed on SAS Viya, EBI, and [SASjs Server](https://server.sasjs.io).
 
 The purpose is to demonstrate the ease with which HTML5 apps can be compiled, built and deployed using SASjs.
+
+![](src/rockroller.png)
 
 ## Deployment
 
