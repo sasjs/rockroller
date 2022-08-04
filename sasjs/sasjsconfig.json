@@ -1,40 +1,31 @@
 {
   "$schema": "https://raw.githubusercontent.com/sasjs/utils/main/src/types/sasjsconfig-schema.json",
+  "streamConfig": {
+    "streamWeb": true,
+    "streamWebFolder": "web",
+    "webSourcePath": "src",
+    "streamServiceName": "Rock-Roller",
+    "streamLogo": "rockroller.png"
+  },
   "defaultTarget": "viya",
   "targets": [
     {
       "name": "viya",
       "serverType": "SASVIYA",
-      "appLoc": "/Public/app/sasjs/rockroller",
-      "serverUrl": "https://sas.analytium.co.uk",
-      "buildConfig": {
-        "buildOutputFileName": "viyadeploy.sas"
-      },
-      "deployConfig": {
-        "deployServicePack": true
-      },
-      "streamConfig": {
-        "streamWeb": true,
-        "streamWebFolder": "webv",
-        "webSourcePath": "src"
-      }
+      "appLoc": "/Public/app/rockroller",
+      "serverUrl": ""
     },
     {
       "name": "sas9",
       "serverType": "SAS9",
-      "appLoc": "/User Folders/&sysuserid/My Folder",
-      "serverUrl": "https://sas.analytium.co.uk:8080",
-      "buildConfig": {
-        "buildOutputFileName": "sas9deploy.sas"
-      },
-      "deployConfig": {
-        "deployServicePack": true
-      },
-      "streamConfig": {
-        "streamWeb": true,
-        "streamWebFolder": "webv",
-        "webSourcePath": "src"
-      }
+      "appLoc": "/User Folders/sasdemo/My Folder",
+      "serverUrl": ""
+    },
+    {
+      "name": "server",
+      "serverUrl": "",
+      "serverType": "SASJS",
+      "appLoc": "/Public/app/rockroller"
     }
   ]
 }
