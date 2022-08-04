@@ -4,8 +4,6 @@ A pure HTML5 game ([source](https://github.com/juwalbose/ThreeJSEndlessRunner3D)
 
 The purpose is to demonstrate the ease with which HTML5 apps can be compiled, built and deployed using SASjs.
 
-![](src/rockroller.png)
-
 ## Deployment
 
 If you just want to deploy the game in your SAS environment, in all cases you need to download the relevant asset from the [releases](https://github.com/sasjs/rockroller/releases) page.
@@ -16,6 +14,7 @@ If you just want to deploy the game in your SAS environment, in all cases you ne
 
 That's it!  Nothing to install, and no admin rights or special privileges required.
 
+![](src/rockroller.png)
 ## Build
 
 If you are a developer and would like to build the app from source, you first need to [install](https://cli.sasjs.io/installation) the SASjs CLI.
