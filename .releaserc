@@ -24,7 +24,7 @@
           },
           {
             "path": "./artefacts/sas9.sas",
-            "label": "SAS 9 EBI (change line2 and run in Enterprise Guide)"
+            "label": "SAS 9 EBI (change line 2 and run in Enterprise Guide)"
           },
           {
             "path": "./artefacts/viya.sas",
